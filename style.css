@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    place-content: center;
+    background-image: url("https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2VicGFnZSUyMGltYWdlcyUyMGNhdHxlbnwwfHwwfHx8MA%3D%3D");
+}
+.container {
+    max-width: 800px;
+    margin: 10%;
+    padding: 5%;
+
+}
+.card {
+    font-family: cursive;
+    width: 600px;
+    height: auto;
+    box-shadow: 2px 2px 2px black;
+    overflow: hidden;
+}
+h2{
+    text-align:center;
+    color: aliceblue;
+}
+
+
+.title{
+    font-family: fantasy;
+    box-shadow: 2px 2px 2px rgb(185, 76, 172);
+}
+
+.title:hover{
+    text-transform: uppercase;
+}
+
+
+* { 
+    margin : 0;
+    padding: 0;
+    box-sizing : border-box;
+    font-familly : "Poppins", sans-serif;
+  }
+  body {
+    display : flex;
+    align-items : center;
+    justify-content : center;  
+    background-color: #43345d;
+    min-height : 800px;
+  }
+  
+  .container {
+    position : relative;
+    width : 1100px;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    flex-warp : warp;
+    padding : 30px;  
+  }
+  
+  .container .card {
+    position: relative;
+    max-width : 300px;
+    height : 215px;  
+    background-color : #fff;
+    margin : 30px 10px;
+    padding : 20px 15px;
+    
+    display : flex;
+    flex-direction : column;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+    transition : 0.3s ease-in-out;
+    border-radius : 15px;
+  }
+  .container .card:hover {
+    height : 320px;    
+    box-shadow: 10px 10px 10px rgb(244, 137, 137);
+  }
+  
+  
+  .container .card .image {
+    position : relative;
+    width : 260px;
+    height : 260px;
+    
+    top : -40%;
+    left: 8px;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+    z-index : 1;
+  }
+  
+  .container .card .image img {
+    max-width : 100%;
+    border-radius : 15px;
+  }
+  
+  .container .card .content {
+    position : relative;
+    top : -140px;
+    padding : 10px 15px;
+    color : #111;
+    text-align : center;
+    
+    visibility : hidden;
+    opacity : 0;
+    transition : 0.3s ease-in-out;
+      
+  }
+  
+  .container .card:hover  {
+     margin-top : 30px;
+     visibility : visible;
+     opacity : 1;
+     transition-delay: 0.2s;
+    
+  }
+
+  h1{
+margin: 0;
+padding: 0;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 100%;
+text-align: center;
+color: #ffffff;
+font-size: 6.5em;
+font-family: sans-serif;
+letter-spacing: 0.2em;
+}
+h1 span{
+display: inline-block;
+animation: animate 1s linear forwards;
+}
+@keyframes animate{
+0%{
+opacity: 0;
+transform: rotateY(90deg);
+filter: blur(10px);
+}
+100%{
+opacity: 1;
+transform: rotateY(0deg);
+filter: blur(0px);
+}
+}
+h1 span:nth-child(1)
+{
+animation-delay:1s;
+}
+h1 span:nth-child(2)
+{
+animation-delay:2s;
+}
+h1 span:nth-child(3)
+{
+animation-delay:2.5s;
+}
+h1 span:nth-child(4)
+{
+animation-delay:3s;
+}
+
+
+.start{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    background:#fcfcfc;
+    color:#a6dadb;
+    border: none;
+    text-align: center;
+    font-size: 1em;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
